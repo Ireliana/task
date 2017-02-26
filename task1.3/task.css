@@ -1,0 +1,64 @@
+*{
+    padding: 20px;
+}
+.container{
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+     height: auto;
+    background-color: #eee;
+}
+.left{
+    height: auto;
+  /*float: left;*/
+   padding: 0px;
+    border: 1px solid #999;
+    background-color: white;
+    width: 200px;
+    overflow: auto;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.team{
+   width: 180px;
+  text-align: center;
+padding-left: 0px;
+    padding-right: 20px;
+}
+.logo{
+margin-right: 20px;
+margin-bottom: 20px;
+    float: left;
+}
+img{
+    padding: 0px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #999;
+}
+.right{
+   width: 120px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: white;
+    float: right;
+}
+ul{
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    list-style: none;
+}
+ul li{
+    padding: 0px 0px 20px 0px;
+}
+.center{
+    text-align: center;
+ margin-left: 222px;
+    border: 1px solid #999;
+    margin-right: 140px;
+}

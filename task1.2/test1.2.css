@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family:'Microsoft YaHei';
+    background-color:#dedede;
+}
+
+.header {
+    width: 100%;
+    background-color: #333;
+}
+
+.header img {
+   height: 60px;
+    position: relative;
+    left: 20px;
+}
+
+.header ul  {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+.header ul li{
+    text-align: center;
+    float: left;
+    display: block;
+    width: 90px;
+    padding: 40px 0px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: white;
+}
+.header ul li:hover{
+    background-color: darkgray;
+}
+.content1,.content2,.content3,.content4,.content5{
+    width: 1350px;
+    padding: 40px 20px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 2px 2px 0.2px gray ;
+
+}
+h3{
+    color: darkgray;
+}
+.pid{
+    color: slategray;
+}
+.ptext{
+    text-indent: 2em;
+}
+.content2 ul{
+    display: block;
+    width: 150px;
+    text-align: center;
+    list-style: none;
+}
+img{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.content3 li{
+
+    display: block;
+    border: 1px solid grey;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    position: relative;
+    left: 40px;
+
+}
+.content3 li p{
+    text-align: center;
+}
+.content3 li img{
+     margin-left: 15px;
+    width: 120px;
+    height: 100px;
+}
+ol{
+    font-weight: bold;
+ position: relative;
+    left: 50px;
+    top: -10px;
+}
+.content4 table{
+    width: 100%;
+    border-collapse: collapse;
+    border:1px solid grey;
+}
+.content4 th,.content4 td{
+    padding-top: 4px ;
+    padding-bottom: 4px ;
+    padding-left: 4px;
+    border: 1px solid grey;
+}
+.content4 th{
+    color: white;
+   text-align: left;
+    background-color: #333333;
+}
+#td1{
+    border: 0px;
+}
+#td2{
+    border: 0px;
+}
+.tr{
+    background-color: darkgray;
+}
+button{
+    width: 2px;
+    height: 40px;
+}
+.div1{
+
+    position: relative;
+}
+div span{
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+    top: 8px;
+}
+
+.submit{
+    margin-top: 15px;
+    margin-bottom: -10px;
+    color: white;
+    font-size: large;
+    display: block;
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: dodgerblue;
+}
+.footer{
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+.footer p{
+   position: relative;
+    top:34px;
+}
+.first{
+    float: right;
+}
+#table tr td{
+    margin-left: 300px;
+    padding-left: 15px;
+    padding-top:20px;
+}
+.tdcontent{
+    color: darkgray;
+}
+#table .radio{
+    margin-left: 7px;
+}
+#table .checkbox{
+    margin-left: 5px;
+}

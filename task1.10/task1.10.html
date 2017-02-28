@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+</div>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    @media (min-width: 640px) {
+    .container{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        align-items: center;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .one{
+        border:1px solid #f00;
+        height: 120px;
+        width: 150px;
+    }
+    .two{
+        border:1px solid #f00;
+        height: 100px;
+        width: 150px;
+    }
+    .three{
+        border:1px solid #f00;
+        height: 40px;
+        width: 150px;
+    }
+    .four{
+        border:1px solid #0f0;
+        height: 200px;
+        width: 150px;
+    }
+    }
+    @media (max-width: 640px) {
+        .container{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            align-items: flex-start;
+            padding:  20px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+        .one{
+            order: 2;
+            border:1px solid #f00;
+            height: 120px;
+            width: 150px;
+
+        }
+        .two{
+            order: 3;
+            border:1px solid #f00;
+            height: 100px;
+            width: 150px;
+        }
+        .three{
+            order: 4;
+            border:1px solid #f00;
+            height: 40px;
+            width: 150px;
+        }
+        .four{
+            order: 1;
+            border:1px solid #0f0;
+            height: 200px;
+            width: 150px;
+        }
+    }
+</style>
+</body>
+</html>

@@ -1,0 +1,81 @@
+table{
+    font-weight: bold;
+}
+th{
+   background-color: black;
+    color: white;
+    text-align: center;
+
+}
+tr:nth-child(2),tr:nth-child(3),tr:nth-child(4){
+    color: red;
+}
+tr:nth-child(odd){
+    background-color: darkgrey;
+}
+.one{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+}
+.two{
+    position: relative;
+    width: 200px;
+    top: 60px;
+    border: 3px solid deepskyblue;
+    border-radius: 5px;
+}
+.container1{
+    position: relative;
+    top: 100px;;
+    width: 250px;
+    height: 120px;
+    background-color: green;
+}
+.small{
+    float: right;
+    position: relative;
+    top: 90px;
+    display: inline-block;
+    color:whitesmoke;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 1px;
+    background-color: lightgreen;
+}
+.container2{
+    position: relative;
+    top: 120px;
+}
+.left {
+float: left;
+    width: 140px;
+    height: 120px;
+    background-color: dodgerblue;
+}
+.right{
+    float: left;
+    width: 140px;
+    height: 120px;
+    background-color: green;
+}
+.container3{
+    background-color: blue;
+    position: relative;
+    top: 270px;
+    width: 280px;
+    height: 120px;
+}
+.index{
+    float: right;
+    position: relative;
+    bottom: 30px;
+    margin-left: 1px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: cadetblue;
+    position: relative;
+}

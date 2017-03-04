@@ -1,0 +1,92 @@
+div{
+
+    border: 1px solid black;
+    margin: 5px 2px;
+
+}
+#ele{
+    width: 450px;
+    height: 100px;
+}
+#sev,#fif{
+    width: 210px;
+    height: 80px;
+}
+#sev{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+#fif{
+    position: absolute;
+    top: 15px;
+    left: 235px;
+}
+#five,#nine,#thirteen,#twenty{
+    width: 90px;
+    height: 60px;
+}
+#five{
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+#nine{
+    position: absolute;
+    top: 25px;
+    left: 130px;
+}
+#thirteen{
+    position: absolute;
+    top: 25px;
+    left: 245px;
+}
+#twenty{
+    position: absolute;
+    top:25px;
+    left: 345px;
+}
+#thr,#six,#eight,#ten,#twelve,#fourteen,#eighteen,#twenty-five{
+    width: 35px;
+    height: 30px;
+}
+#thr{
+    position: absolute;
+    top: 40px;
+    left: 36px;
+}
+#six{
+    position: absolute;
+    top: 40px;
+    left: 78px;
+}
+#eight{
+    position: absolute;
+    top: 40px;
+    left: 136px;
+}
+#ten{
+    position: absolute;
+    top: 40px;
+    left: 178px;
+}
+#twelve{
+    position: absolute;
+    top: 40px;
+    left: 250px;
+}
+#fourteen{
+    position: absolute;
+    top: 40px;
+    left: 290px;
+}
+#eighteen{
+    position: absolute;
+    top: 40px;
+    left: 350px;
+}
+#twenty-five{
+    position: absolute;
+    top: 40px;
+    left: 390px;
+}

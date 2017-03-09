@@ -1,59 +1,53 @@
 /**
  * Created by Administrator on 2017/3/7 0007.
  */
+"use strict";
+function nullCheck() {
+    document.getElementById("ipt").style.borderColor = "red";
+    document.getElementById("tip").style.color = "red";
+    document.getElementById("tip").innerText = "姓名不能为空";
+}
+function errorCheck() {
+    document.getElementById("ipt").style.borderColor = "red";
+    document.getElementById("tip").style.color = "red";
+    document.getElementById("tip").innerText = "名称格式错误";
+}
+function checkEn(m) {
+    return m.charCodeAt(0) <=0xFF;
+}
+
+function rightCheck() {
+    document.getElementById("ipt").style.borderColor = "lawngreen";
+    document.getElementById("tip").style.color = "lawngreen";
+    document.getElementById("tip").innerText = "名称格式正确";
+}
 function check() {
-    var temp = 1;
-    var tip =  document.getElementById("tip");
-    var ipt = document.getElementById("ipt");
-    if(ipt.value === ""){
-        ipt.style.borderColor = "red";
-       tip.style.color = "red";
-       tip.innerText = "姓名不能为空";
+    var en = 0;
+    var ch = 0;
+    var msg = document.getElementById("ipt").value.trim();
+
+    if(msg == ""){
+        nullCheck();
     }else {
-        var msg =  ipt.value;
-        console.log(msg);
-       var m = msg.split("");
-       console.log(m);
-       if(m.length>=4&&m.length<=16){
-            for(var i=0;i<m.length;i++){
-                if(m[i].charCodeAt(0)>=0x00&&m[i].charCodeAt(0)<=0xFF){
-                    if(m[i].length == 1){
-                        continue;
-                    }else {console.log("英");
-                            temp = 0;
-                           ipt.style.borderColor = "red";
-                            tip.style.color = "red";
-                            tip.innerText = "名称格式错误";
-                            break;
-                        }
-
-                    }else {
-                    if(m[i].length == 1){
-                        continue;
-                    }else {
-                        console.log("中");
-                        console.log(m[i]);
-                        temp = 0;
-                        ipt.style.borderColor = "red";
-                        tip.style.color = "red";
-                        tip.innerText = "名称格式错误";
-                        break;
-                    }
-                }
-
+        for(let  i of msg){
+            if(checkEn(i)){
+                en++;
+            }else {
+                ch++;
             }
-       }else {
-           temp = 0;
-           ipt.style.borderColor = "red";
-           tip.style.color = "red";
-           tip.innerText = "名称格式错误";
-       }
-       if(temp){
-           console.log("1");
-           ipt.style.borderColor = "lawngreen";
-            tip.style.color = "lawngreen";
-            tip.innerText = "名称格式正确";
+        }
+        var result  = en + ch*2;
+        console.log(result);
+        if(result>=4&&result<=16){
+            rightCheck();
+        }else {
+            errorCheck();
         }
     }
-
 }
+
+
+
+
+
+

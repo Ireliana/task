@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="form.1.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<style>
+    div{
+        margin: 100px auto;
+        font-weight: bold;
+        font-size: large;
+    }
+    table{
+        margin-left: 50px;
+    }
+    #tip{
+        margin-top: 5px;
+        color: darkgrey;
+        display: block;
+        margin-left: 30px;
+    }
+    input{
+        margin-left: 30px;
+        border: 1px solid silver;
+        width: 350px;
+        height: 40px;
+        border-radius: 6px;
+    }
+    button{
+      margin-left: 20px;
+    }
+
+</style>
+<div><form>
+  <table>
+      <tr>
+          <th>名称</th>
+          <th><input type="text" required id="ipt"></th>
+          <th><button  type="button" class="btn-primary btn-lg" onclick="check()">验证</button></th>
+      </tr>
+      <tr>
+          <td></td>
+          <td id="tip">必填，长度为4~16个字符</td>
+      </tr>
+  </table>
+</form>
+</div>
+
+</body>
+</html>

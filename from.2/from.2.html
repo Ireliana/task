@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="from.2.js"></script>
+</head>
+<body>
+<style>
+    div{
+        margin: 100px auto;
+        font-weight: bold;
+        font-size: large;
+    }
+    input{
+        margin-left: 30px;
+        border: 1px solid silver;
+        width: 350px;
+        height: 40px;
+        border-radius: 6px;
+    }
+    button{
+        color: white;
+        float: right;
+        width: 80px;
+        height: 40px;
+        background-color: #46b8da;
+    }
+</style>
+<div>
+    <form>
+        <table>
+        <tr>
+            <td>名称</td>
+            <td><input type="text" id="name" placeholder="name" onfocus="nameFocus()" onblur="nameCheck()"></td>
+        </tr>
+            <tr >
+             <td></td>
+             <td id="nametip"></td>
+            </tr>
+        <tr>
+            <td>密码</td>
+            <td><input type="text" id="passWord" placeholder="passWord" onfocus="passWordFocus()" onblur="passWordCheck()"></td>
+        </tr>
+            <tr >
+                <td></td>
+                <td id="passWordtip"></td>
+            </tr>
+        <tr>
+            <td>密码确认</td>
+            <td><input type="text" id="passWordCopy" placeholder="passWord" onfocus="passWordCopyFocus()" onblur="passWordCopyCheck()"></td>
+        </tr>
+            <tr >
+                <td></td>
+                <td id="passWordCopytip" ></td>
+            </tr>
+
+        <tr>
+            <td>邮箱</td>
+            <td><input type="text" id="e-mail" placeholder="e-mail" onfocus="emailFocus()" onblur="emailCheck()"></td>
+        </tr>
+            <tr >
+                <td></td>
+                <td id="emailtip"></td>
+            </tr>
+        <tr>
+            <td>手机</td>
+            <td><input type="text" id="tel" placeholder="telPhone" onfocus="telFocus()" onblur="telCheck()"></td>
+        </tr>
+            <tr >
+                <td></td>
+                <td id="teltip"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="check()">提交</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

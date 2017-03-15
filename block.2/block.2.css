@@ -1,0 +1,515 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    margin: 100px auto;
+    margin-bottom: 10px;
+}
+th,td{
+    width: 50px;
+    height: 50px;
+}
+td:first-child{
+    font-weight: bold;
+}
+td:nth-child(2){
+    border-left: 2px solid black;
+}
+tr:nth-child(2)>td{
+    border-top: 2px solid black;
+}
+td{
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
+tr:nth-child(2)>td:first-child{
+    border-top:white;
+}
+td:last-child{
+    border-right: 2px solid black;
+}
+tr:nth-child(11)>td{
+    border-bottom: 2px solid black;
+}
+td:first-child{
+    border-bottom:white;
+}
+tr:nth-child(11)>td:first-child{
+    border-bottom:white;
+}
+button{
+    margin-left: 4px;
+}
+.input{
+    margin: 0px auto;
+}
+.input tr>td{
+    border: white;
+}
+@keyframes topTopLEF {
+     from {
+     }
+     to{
+         transform: rotate(-90deg);
+         transform-origin: 26px 26px;
+     }
+ }
+
+@keyframes topLeftLEF {
+    from {
+        transform: rotate(-90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(-180deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes topBottomLEF {
+    from {
+        transform: rotate(-180deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(-270deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes topRightLEF {
+    from {
+        transform: rotate(-270deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(-360deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes topTopRIG {
+    from{
+
+    }to{
+    transform: rotate(90deg);
+    transform-origin: 26px 26px;
+         }
+}
+@keyframes topBottomRIG {
+    from{
+           transform: rotate(180deg);
+           transform-origin: 26px 26px;
+    }to{
+         transform: rotate(270deg);
+         transform-origin: 26px 26px;
+     }
+}
+@keyframes topLeftRIG {
+     from{
+         transform: rotate(270deg);
+         transform-origin: 26px 26px;
+     }to{
+          transform: rotate(360deg);
+          transform-origin: 26px 26px;
+      }
+ }
+@keyframes topRightRIG {
+      from{
+          transform: rotate(90deg);
+          transform-origin: 26px 26px;
+      }to{
+           transform: rotate(180deg);
+           transform-origin: 26px 26px;
+       }
+  }
+  @keyframes topTopBAC {
+      from{
+
+      }
+      to{
+          transform: rotate(180deg);
+          transform-origin: 26px 26px;
+      }
+  }
+@keyframes topBottomBAC {
+    from{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(360deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes topLeftBAC {
+      from{
+          transform: rotate(270deg);
+          transform-origin: 26px 26px;
+      }
+      to{
+          transform: rotate(90deg);
+          transform-origin: 26px 26px;
+      }
+  }
+@keyframes topRightBAC {
+        from{
+            transform: rotate(90deg);
+            transform-origin: 26px 26px;
+        }
+        to{
+            transform: rotate(270deg);
+            transform-origin: 26px 26px;
+        }
+    }
+@keyframes bottomTopLEF {
+    from{
+        transform: rotate(-180deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(-270deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes bottomRightLEF {
+    from{
+        transform: rotate(-90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(-180deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes bottomBottomLEF {
+    from{
+
+    }
+    to{
+        transform: rotate(-90deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes bottomLeftLEF {
+    from{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(0deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes bottomTopRIG {
+    from{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(270deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes bottomBottomRIG {
+      from{
+
+      }
+      to{
+          transform: rotate(90deg);
+          transform-origin: 26px 26px;
+      }
+  }
+@keyframes bottomLeftRIG {
+    from{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes bottomRightRIG {
+    from{
+        transform: rotate(270deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(360deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes bottomTopBAC {
+     from{
+         transform: rotate(180deg);
+         transform-origin: 26px 26px;
+     }
+     to{
+         transform: rotate(360deg);
+         transform-origin: 26px 26px;
+     }
+ }
+@keyframes bottomBottomBAC {
+    from{
+
+    }
+    to{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes bottomLeftBAC {
+    from{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(270deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes bottomRightBAC {
+    from{
+        transform: rotate(270deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes leftTopLEF {
+    from{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(0deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes leftBottomLEF {
+    from{
+        transform: rotate(-90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(-180deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes leftLeftLEF {
+    from{
+
+    }
+    to{
+        transform: rotate(-90deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes leftRightLEF {
+    from{
+        transform: rotate(-180deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(-270deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes rightTopLEF {
+    from{
+        transform: rotate(-90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(-180deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes rightBottomLEF {
+    from{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(0deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes rightLeftLEF {
+    from{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes rightRightLEF {
+    from{
+
+    }
+    to{
+        transform: rotate(-90deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes leftTopRIG {
+    from{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes leftBottomRIG {
+    from{
+        transform: rotate(270deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(360deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes leftLeftRIG {
+    from{
+
+    }
+    to{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes leftRightRIG {
+    from{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(270deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes rightTopRIG {
+    from{
+        transform: rotate(-90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(0deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes rightBottomRIG {
+    from{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes rightLeftRIG {
+    from{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(270deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes rightRightRIG {
+    from{
+
+    }
+    to{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes leftTopBAC {
+    from{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(270deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes leftBottomBAC {
+    from{
+        transform: rotate(-90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes leftLeftBAC {
+    from{
+
+    }
+    to{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes leftRightBAC {
+    from{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(360deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes rightTopBAC {
+    from{
+        transform: rotate(-90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes rightBottomBAC {
+    from{
+        transform: rotate(90deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(270deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes rightLeftBAC {
+    from{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+    to{
+        transform: rotate(360deg);
+        transform-origin: 26px 26px;
+    }
+}
+@keyframes rightRightBAC {
+    from{
+
+    }
+    to{
+        transform: rotate(180deg);
+        transform-origin: 26px 26px;
+    }
+}
